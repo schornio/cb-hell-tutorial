@@ -3,10 +3,8 @@
 ## Inhalt
 
 1. Quick and dirty
-2. Isaac Schlueter's Ansatz
-3. Promises
-4. Generator Functions
-5. `async`/`await`
+2. Promises
+3. Generator Functions
 
 ## Versuchsaufbau
 
