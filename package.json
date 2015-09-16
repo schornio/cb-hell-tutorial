@@ -1,0 +1,30 @@
+{
+  "name": "cb-hell-tutorial",
+  "version": "1.0.0",
+  "description": "Callback-hell tutorial for Stahlstadt.JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schornio/cb-hell-tutorial.git"
+  },
+  "keywords": [
+    "callbacks",
+    "promise",
+    "async",
+    "yield",
+    "generators"
+  ],
+  "author": "Thomas Schorn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schornio/cb-hell-tutorial/issues"
+  },
+  "homepage": "https://github.com/schornio/cb-hell-tutorial#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.2"
+  }
+}

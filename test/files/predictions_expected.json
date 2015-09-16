@@ -1,0 +1,22 @@
+[
+  {
+    "vorname": "Tyrion",
+    "status": "alive",
+    "isAzorAhai": true
+  },
+  {
+    "vorname": "Jon",
+    "status": "alive",
+    "isAzorAhai": true
+  },
+  {
+    "vorname": "Stanis",
+    "status": "alive",
+    "isAzorAhai": true
+  },
+  {
+    "vorname": "Daenerys",
+    "status": "alive",
+    "isAzorAhai": true
+  }
+]
