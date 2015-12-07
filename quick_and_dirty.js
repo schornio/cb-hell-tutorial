@@ -5,7 +5,7 @@ var fs = require('fs');
 var predictionsCsvToJson = require(__dirname + '/lib/predictionsCsvToJson');
 var predictionsJoin = require(__dirname + '/lib/predictionsJoin');
 
-module.exports = function quickAndDirty (basePath, callback) {
+function quickAndDirty (basePath, callback) {
   fs.readFile(basePath + '/predictions.csv', function (error, predictionsCsvBuffer) {
     if(error) { callback(error); return; }
 
@@ -22,4 +22,6 @@ module.exports = function quickAndDirty (basePath, callback) {
       });
     });
   });
-};
+}
+
+module.exports = quickAndDirty;

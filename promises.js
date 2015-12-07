@@ -8,9 +8,9 @@ var predictionsJoin = require(__dirname + '/lib/predictionsJoin');
 
 BBPromise.promisifyAll(fs);
 
-module.exports = function promises (basePath, callback) {
+function promises (basePath) {
   var predictions;
-  
+
   return fs.readFileAsync(basePath + '/predictions.csv')
     .then(function (predictionsCsvBuffer) {
       predictions = predictionsCsvToJson(predictionsCsvBuffer.toString());
@@ -21,4 +21,6 @@ module.exports = function promises (basePath, callback) {
       var predictionsJsonString = JSON.stringify(predictions);
       return fs.writeFileAsync(basePath + '/predictions.json', predictionsJsonString);
     });
-};
+}
+
+module.exports = promises;

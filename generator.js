@@ -8,13 +8,15 @@ var predictionsJoin = require(__dirname + '/lib/predictionsJoin');
 
 BBPromise.promisifyAll(fs);
 
-module.exports = BBPromise.coroutine(function* generator (basePath, callback) {
+function* generator (basePath) {
   var predictionsCsvBuffer = yield fs.readFileAsync(basePath + '/predictions.csv');
   var predictions = predictionsCsvToJson(predictionsCsvBuffer.toString());
 
   var namesCsvBuffer = yield fs.readFileAsync(basePath + '/names.csv');
   predictionsJoin(predictions, namesCsvBuffer.toString());
-  
+
   var predictionsJsonString = JSON.stringify(predictions);
   yield fs.writeFileAsync(basePath + '/predictions.json', predictionsJsonString);
-});
+}
+
+module.exports = BBPromise.coroutine(generator);
