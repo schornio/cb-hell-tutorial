@@ -46,3 +46,8 @@ describe('Generator', function () {
   var generator = require('../generator');
   testTutorial(generator);
 });
+
+describe('Async Await', function () {
+  var generator = require('../dist/async_await');
+  testTutorial(generator);
+});

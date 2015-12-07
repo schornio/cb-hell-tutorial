@@ -5,6 +5,7 @@
 1. Quick and dirty
 2. Promises
 3. Generator Functions
+4. Async/await
 
 ## Versuchsaufbau
 
@@ -32,3 +33,13 @@ mach `predictions.json`:
       { vorname: 'Stanis', nachname: 'Baratheon', status: 'alive', isAzorAhai: false },
       { vorname: 'Daenerys', nachname: 'Targaryen', status: 'alive', isAzorAhai: true }
     ]
+
+## Testen
+
+** Kompilieren **
+
+    gulp
+
+** Tests ausführen **
+
+    npm test

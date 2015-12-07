@@ -24,7 +24,11 @@
   },
   "homepage": "https://github.com/schornio/cb-hell-tutorial#readme",
   "devDependencies": {
+    "babel-plugin-transform-async-to-module-method": "^6.3.13",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.3.13",
     "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
     "mocha": "^2.3.2"
   },
   "dependencies": {
