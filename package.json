@@ -1,6 +1,6 @@
 {
   "name": "cb-hell-tutorial",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Callback-hell tutorial for Stahlstadt.JS",
   "main": "index.js",
   "scripts": {
